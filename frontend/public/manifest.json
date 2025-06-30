@@ -1,0 +1,27 @@
+{
+  "short_name": "IDS Dashboard",
+  "name": "Intrusion Detection Dashboard - Cybersecurity Blue Team Tool",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#00d4aa",
+  "background_color": "#0f0f23",
+  "description": "Advanced cybersecurity blue team tool for network traffic analysis and threat detection"
+}

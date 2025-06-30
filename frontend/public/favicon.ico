@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#0f0f23" rx="4"/>
+  
+  <!-- Shield outline -->
+  <path d="M16 3 L7 6 L7 15 C7 22.5 16 29 16 29 C16 29 25 22.5 25 15 L25 6 Z" 
+        fill="none" stroke="#00d4aa" stroke-width="1.5"/>
+  
+  <!-- Shield fill -->
+  <path d="M16 4.5 L8.5 7 L8.5 15 C8.5 21.5 16 27 16 27 C16 27 23.5 21.5 23.5 15 L23.5 7 Z" 
+        fill="#00d4aa" opacity="0.8"/>
+  
+  <!-- Eye symbol (monitoring) -->
+  <ellipse cx="16" cy="14" rx="5" ry="3" fill="#0f0f23"/>
+  <circle cx="16" cy="14" r="2.5" fill="#00d4aa"/>
+  <circle cx="16" cy="14" r="1" fill="#0f0f23"/>
+  
+  <!-- Alert indicators -->
+  <circle cx="11" cy="10" r="1" fill="#ff4444"/>
+  <circle cx="21" cy="10" r="1" fill="#ffaa00"/>
+  <circle cx="16" cy="21" r="1" fill="#44ff44"/>
+</svg>

@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the cybersecurity theme */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f23;
+  color: #e2e8f0;
+}
+
+.font-mono {
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Cyber glow effect */
+.cyber-glow {
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+}
+
+/* Pulse animation for critical alerts */
+@keyframes pulse-red {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse-red {
+  animation: pulse-red 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom table styles */
+.cyber-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.cyber-table th {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-bottom: 2px solid #00d4aa;
+}
+
+.cyber-table td {
+  border-bottom: 1px solid #374151;
+}
+
+.cyber-table tr:hover td {
+  background-color: rgba(0, 212, 170, 0.1);
+}
+
+/* Threat type badges */
+.threat-badge {
+  @apply px-2 py-1 text-xs font-medium rounded-full;
+}
+
+.threat-suspicious-port {
+  @apply bg-yellow-900 text-yellow-300 border border-yellow-700;
+}
+
+.threat-high-frequency {
+  @apply bg-red-900 text-red-300 border border-red-700;
+}
+
+.threat-unusual-protocol {
+  @apply bg-purple-900 text-purple-300 border border-purple-700;
+}
+
+.threat-large-packet {
+  @apply bg-orange-900 text-orange-300 border border-orange-700;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 2px solid #374151;
+  border-top: 2px solid #00d4aa;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* File upload area */
+.file-upload-area {
+  border: 2px dashed #475569;
+  transition: all 0.3s ease;
+}
+
+.file-upload-area.dragover {
+  border-color: #00d4aa;
+  background-color: rgba(0, 212, 170, 0.1);
+}
+
+.file-upload-area:hover {
+  border-color: #00d4aa;
+  background-color: rgba(0, 212, 170, 0.05);
+}
+
+/* Chart container */
+.chart-container {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border: 1px solid #475569;
+}
+
+/* Status indicators */
+.status-online {
+  @apply bg-green-500;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+.status-offline {
+  @apply bg-red-500;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+/* Card components */
+.cyber-card {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border: 1px solid #475569;
+  transition: all 0.3s ease;
+}
+
+.cyber-card:hover {
+  border-color: #00d4aa;
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.2);
+}
+
+/* Button styles */
+.btn-cyber {
+  @apply bg-gradient-to-r from-cyber-blue to-purple-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300;
+}
+
+.btn-cyber:hover {
+  @apply shadow-lg transform -translate-y-0.5;
+  box-shadow: 0 10px 25px rgba(0, 212, 170, 0.3);
+}
+
+.btn-cyber:disabled {
+  @apply opacity-50 cursor-not-allowed transform-none;
+  box-shadow: none;
+}
+
+/* Alert severity colors */
+.severity-low {
+  @apply border-l-4 border-l-green-500 bg-green-900 bg-opacity-20;
+}
+
+.severity-medium {
+  @apply border-l-4 border-l-yellow-500 bg-yellow-900 bg-opacity-20;
+}
+
+.severity-high {
+  @apply border-l-4 border-l-red-500 bg-red-900 bg-opacity-20;
+}
+
+.severity-critical {
+  @apply border-l-4 border-l-purple-500 bg-purple-900 bg-opacity-20;
+}

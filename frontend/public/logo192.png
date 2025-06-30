@@ -1,0 +1,54 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f23;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="192" height="192" fill="url(#bgGrad)" rx="24"/>
+  
+  <!-- Shield outline with glow -->
+  <path d="M96 24 L48 36 L48 96 C48 144 96 168 96 168 C96 168 144 144 144 96 L144 36 Z" 
+        fill="none" stroke="#00d4aa" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Main shield -->
+  <path d="M96 30 L54 40 L54 96 C54 138 96 160 96 160 C96 160 138 138 138 96 L138 40 Z" 
+        fill="url(#shieldGrad)" opacity="0.9"/>
+  
+  <!-- Central monitoring eye -->
+  <ellipse cx="96" cy="84" rx="30" ry="18" fill="#0f0f23" opacity="0.8"/>
+  <ellipse cx="96" cy="84" rx="24" ry="14" fill="#00d4aa"/>
+  <circle cx="96" cy="84" r="8" fill="#0f0f23"/>
+  <circle cx="98" cy="82" r="3" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Network nodes -->
+  <circle cx="72" cy="60" r="4" fill="#ff4444"/>
+  <circle cx="120" cy="60" r="4" fill="#ffaa00"/>
+  <circle cx="84" cy="120" r="4" fill="#44ff44"/>
+  <circle cx="108" cy="120" r="4" fill="#44ff44"/>
+  
+  <!-- Connection lines -->
+  <line x1="72" y1="60" x2="96" y2="84" stroke="#00d4aa" stroke-width="1" opacity="0.6"/>
+  <line x1="120" y1="60" x2="96" y2="84" stroke="#00d4aa" stroke-width="1" opacity="0.6"/>
+  <line x1="84" y1="120" x2="96" y2="84" stroke="#00d4aa" stroke-width="1" opacity="0.6"/>
+  <line x1="108" y1="120" x2="96" y2="84" stroke="#00d4aa" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Digital pattern overlay -->
+  <rect x="60" y="140" width="72" height="2" fill="#00d4aa" opacity="0.4"/>
+  <rect x="65" y="144" width="62" height="1" fill="#00d4aa" opacity="0.3"/>
+  <rect x="70" y="147" width="52" height="1" fill="#00d4aa" opacity="0.2"/>
+</svg>

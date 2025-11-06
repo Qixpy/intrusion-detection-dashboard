@@ -67,8 +67,8 @@ This project demonstrates practical cybersecurity skills including:
 ### Installation
 
 1. **Clone the repository**
-`ash
-git clone https://github.com/[your-username]/intrusion-detection-dashboard.git
+`bash
+git clone https://github.com/Qixpy/intrusion-detection-dashboard.git
 cd intrusion-detection-dashboard
 `
 
